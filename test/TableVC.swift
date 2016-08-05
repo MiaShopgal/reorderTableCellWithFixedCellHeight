@@ -39,12 +39,15 @@ class TableVC: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
-        
-        
-        
+
+        /*if (sourceIndexPath.row == destinationIndexPath.row && sourceIndexPath.section == destinationIndexPath.section) {
+            return;
+        }
+
+//        self.performSelector(#selector(TableVC.delayedReloadData), withObject: tableView, afterDelay: 0)
+    tableView.reloadData()*/
     }
-    
-    
+
 
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
